@@ -3,163 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kirmada - Anime & Comics</title>
+    <title>Kirmada Team – CEO & CTO</title>
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
             background: #0a0a0f;
-            color: #f0eaff;
+            color: #e0d4ff;
         }
 
         header {
-            background: #1a1a27;
-            padding: 20px;
+            background: #12121a;
+            padding: 25px;
             text-align: center;
-            border-bottom: 3px solid #8b2bff;
+            border-bottom: 2px solid #7d2cff;
+            box-shadow: 0 0 15px #591acc;
         }
 
         header h1 {
+            font-size: 42px;
             margin: 0;
-            font-size: 40px;
-            color: #b67bff;
-            text-shadow: 0 0 10px #8b2bff;
+            color: #c39bff;
+            text-shadow: 0 0 12px #7d2cff;
         }
 
         header p {
-            margin: 5px 0 0;
-            color: #caaaff;
             font-size: 18px;
+            color: #9e88c8;
+            margin-top: 6px;
         }
 
-        nav {
-            background: #12121a;
-            padding: 12px;
+        .team-section {
             text-align: center;
-            border-bottom: 2px solid #5b1ee6;
+            padding: 50px 20px;
         }
 
-        nav a {
-            color: #caaaff;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 16px;
-        }
-        nav a:hover {
-            color: #8b2bff;
-            text-shadow: 0 0 10px #8b2bff;
+        .team-section h2 {
+            font-size: 32px;
+            text-shadow: 0 0 10px #7d2cff;
+            margin-bottom: 20px;
         }
 
-        .hero {
-            padding: 60px 20px;
-            text-align: center;
-            background: linear-gradient(180deg, #0a0a0f, #1a0b2c);
+        .team-photo {
+            width: 88%;
+            max-width: 900px;
+            border-radius: 15px;
+            margin: auto;
+            display: block;
+            border: 3px solid #8b2bff;
+            box-shadow: 0 0 25px #7d2cff;
         }
 
-        .hero h2 {
-            font-size: 36px;
-            text-shadow: 0 0 12px #8b2bff;
-        }
-
-        .hero p {
-            margin-top: 10px;
-            font-size: 18px;
-            color: #d8c7ff;
-        }
-
-        .section-title {
-            text-align: center;
-            margin: 50px 0 20px;
-            font-size: 28px;
-            color: #b67bff;
-            text-shadow: 0 0 10px #8b2bff;
-        }
-
-        .cards {
+        .label-container {
             display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-            padding: 0 20px 40px;
+            justify-content: space-between;
+            width: 88%;
+            max-width: 900px;
+            margin: 15px auto;
         }
 
-        .card {
-            background: #161622;
-            width: 260px;
-            padding: 20px;
-            border-radius: 12px;
-            border: 2px solid #5b1ee6;
-            box-shadow: 0 0 15px #4b13c8;
-            transition: 0.3s;
-        }
-
-        .card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 25px #8b2bff;
-        }
-
-        .card img {
-            width: 100%;
-            border-radius: 8px;
-        }
-
-        .card h3 {
+        .label {
+            background: #1b1b29;
+            padding: 12px 20px;
+            border-radius: 10px;
+            border: 2px solid #7d2cff;
+            box-shadow: 0 0 15px #591acc;
+            font-weight: bold;
+            font-size: 18px;
+            width: 43%;
             text-align: center;
-            margin-top: 12px;
-            color: #d1baff;
         }
 
         footer {
-            background: #0b0b12;
-            padding: 20px;
+            background: #0a0a0f;
+            padding: 18px;
             text-align: center;
-            color: #9b8cb8;
-            border-top: 2px solid #5b1ee6;
+            color: #8d7fb5;
+            margin-top: 40px;
+            border-top: 2px solid #7d2cff;
+        }
+
+        @media (max-width: 600px) {
+            .label-container {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .label {
+                width: 100%;
+            }
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Kirmada</h1>
-    <p>Read, Explore & Enjoy — Kirmada: The World of Comics</p>
+    <h1>Kirmada Team</h1>
+    <p>Meet the Minds Behind the Mission</p>
 </header>
 
-<nav>
-    <a href="#">Home</a>
-    <a href="#">Comics</a>
-    <a href="#">Anime</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
-</nav>
+<section class="team-section">
+    <h2>CEO & CTO</h2>
 
-<section class="hero">
-    <h2>Welcome to Kirmada</h2>
-    <p>Your ultimate destination for Anime, Manga, and Comic adventures!</p>
+    <!-- Your Uploaded Photo -->
+    <img class="team-photo" src="https://raw.githubusercontent.com/AmanKirmada/AmanKirmada.github.io/refs/heads/main/WhatsApp%20Image%202025-10-18%20at%2015.36.39_9de3d48a.jpg" alt="CEO and CTO">
+
+    <div class="label-container">
+        <div class="label">CEO – (Blue Stripes)</div>
+        <div class="label">CTO – (Brown Shirt)</div>
+    </div>
 </section>
 
-<h2 class="section-title">Featured Comics</h2>
-
-<div class="cards">
-    <div class="card">
-        <img src="https://i.ibb.co/7tY8q2R/anime1.jpg" alt="Comic 1">
-        <h3>Shadow Warriors</h3>
-    </div>
-
-    <div class="card">
-        <img src="https://i.ibb.co/dD1L6PN/anime2.jpg" alt="Comic 2">
-        <h3>Neon Ninja</h3>
-    </div>
-
-    <div class="card">
-        <img src="https://i.ibb.co/NjmwT5c/anime3.jpg" alt="Comic 3">
-        <h3>Galaxy Ronin</h3>
-    </div>
-</div>
-
 <footer>
-    © 2025 Kirmada • All Rights Reserved • Anime & Comics Universe
+    © 2025 Kirmada • All Rights Reserved • Anime Dark Mode Team Page
 </footer>
 
 </body>
